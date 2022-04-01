@@ -15,18 +15,9 @@ genome_assembly.seqStore/
 
 # ignore logs
 .log
-canu-logs/
-canu-scripts/
-01_genome_assembly/correction/
-01_genome_assembly/trimming/
-01_genome_assembly/unitigging/
-genome_assembly.contigs.layout.tigInfo
-genome_assembly.contigs.layout.readToTig
+/analyses/*
+!/analyses/01_genome_assembly/genome_assembly.report
+!/analyses/01_genome_assembly/evaluation/mummer.png
+!/analyses/01_genome_assembly/evaluation/report.pdf
 
-
-
-01_genome_assembly/*
-!genome_assembly.contigs.fasta
-!evaluation/*
-!genome_assembly.report
 
