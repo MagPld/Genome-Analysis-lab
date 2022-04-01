@@ -1,2 +1,0 @@
-Assembly	# misassemblies	    # relocations	    # translocations	    # inversions	# misassembled contigs	Misassembled contigs length	# local misassemblies	# unaligned mis. contigs	# mismatches	# indels	    # indels (<= 5 bp)	    # indels (> 5 bp)	Indels length
-genome_assembly.contigs	1	1	0	0	1	2568209	0	0	0	181	181	0	181
