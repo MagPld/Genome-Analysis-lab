@@ -1,0 +1,50 @@
+
+Found perl:
+   /usr/bin/perl
+   This is perl 5, version 16, subversion 3 (v5.16.3) built for x86_64-linux-thread-multi
+
+Found java:
+   /sw/comp/java/x86_64/sun_jdk1.8.0_151/bin/java
+   java version "1.8.0_151"
+
+Found canu:
+   /sw/bioinfo/canu/2.2/rackham/bin/canu
+   canu snapshot v2.2 +0 changes (r10279 af9c6e709ff2d6473cf966702c420b9eb42d9078)
+
+Running job 1 based on command line options.
+
+Attempting to increase maximum allowed processes and open files.
+  Changed max processes per user from 4096 to 514828 (max 514828).
+  Max open files limited to 16384, no increase possible.
+
+
+Opened '../genome_assembly.seqStore' with 215276 reads.
+
+Constructing slice 1 for store './genome_assembly.ovlStore.BUILDING'.
+ - Filtering overlaps over 1.0000 fraction error.
+
+Bucketizing input    1 out of   24 - '1-overlapper/results/000001.ovb'
+Bucketizing input    2 out of   24 - '1-overlapper/results/000004.ovb'
+Bucketizing input    3 out of   24 - '1-overlapper/results/000006.ovb'
+Bucketizing input    4 out of   24 - '1-overlapper/results/000009.ovb'
+Bucketizing input    5 out of   24 - '1-overlapper/results/000010.ovb'
+Bucketizing input    6 out of   24 - '1-overlapper/results/000012.ovb'
+Bucketizing input    7 out of   24 - '1-overlapper/results/000015.ovb'
+Bucketizing input    8 out of   24 - '1-overlapper/results/000016.ovb'
+Bucketizing input    9 out of   24 - '1-overlapper/results/000018.ovb'
+Bucketizing input   10 out of   24 - '1-overlapper/results/000021.ovb'
+Bucketizing input   11 out of   24 - '1-overlapper/results/000023.ovb'
+Bucketizing input   12 out of   24 - '1-overlapper/results/000025.ovb'
+Bucketizing input   13 out of   24 - '1-overlapper/results/000028.ovb'
+Bucketizing input   14 out of   24 - '1-overlapper/results/000031.ovb'
+Bucketizing input   15 out of   24 - '1-overlapper/results/000032.ovb'
+Bucketizing input   16 out of   24 - '1-overlapper/results/000035.ovb'
+Bucketizing input   17 out of   24 - '1-overlapper/results/000036.ovb'
+Bucketizing input   18 out of   24 - '1-overlapper/results/000039.ovb'
+Bucketizing input   19 out of   24 - '1-overlapper/results/000041.ovb'
+Bucketizing input   20 out of   24 - '1-overlapper/results/000043.ovb'
+Bucketizing input   21 out of   24 - '1-overlapper/results/000045.ovb'
+Bucketizing input   22 out of   24 - '1-overlapper/results/000046.ovb'
+Bucketizing input   23 out of   24 - '1-overlapper/results/000049.ovb'
+Bucketizing input   24 out of   24 - '1-overlapper/results/000050.ovb'
+Success!

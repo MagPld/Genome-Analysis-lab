@@ -1,0 +1,4 @@
+    [S1]     [E1]  |     [S2]     [E2]  |  [LEN 1]  [LEN 2]  |  [% IDY]  | [TAGS]
+=====================================================================================
+22356 396874 | 374486 1 | 374519 374486 | 99.99 | ENA_OBMB01000001_OBMB01000001.1_Leptospirillum_ferriphilum_isolate_pb_238_genome_assembly__contig__unitig_0_quiver tig00000001_len_2568209_reads_4295_class_contig_suggestRepeat_no_suggestBubble_no_suggestCircular_yes_trim_9552-2556383
+375474 2569357 | 2568209 374487 | 2193884 2193723 | 99.99 | ENA_OBMB01000001_OBMB01000001.1_Leptospirillum_ferriphilum_isolate_pb_238_genome_assembly__contig__unitig_0_quiver tig00000001_len_2568209_reads_4295_class_contig_suggestRepeat_no_suggestBubble_no_suggestCircular_yes_trim_9552-2556383

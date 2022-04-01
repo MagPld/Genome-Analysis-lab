@@ -1,0 +1,26 @@
+lenSuggestCircular ng10     2569458 bp   lg10       1   sum    2569458 bp
+lenSuggestCircular ng20     2569458 bp   lg20       1   sum    2569458 bp
+lenSuggestCircular ng30     2569458 bp   lg30       1   sum    2569458 bp
+lenSuggestCircular ng40     2569458 bp   lg40       1   sum    2569458 bp
+lenSuggestCircular ng50     2569458 bp   lg50       1   sum    2569458 bp
+lenSuggestCircular ng60     2569458 bp   lg60       1   sum    2569458 bp
+lenSuggestCircular ng70     2569458 bp   lg70       1   sum    2569458 bp
+lenSuggestCircular ng80     2569458 bp   lg80       1   sum    2569458 bp
+lenSuggestCircular sum    2569458 (genomeSize 3000000)
+lenSuggestCircular num          1
+lenSuggestCircular ave    2569458
+lenUnassembled ng10        1319 bp   lg10      29   sum     301290 bp
+lenUnassembled sum     314943 (genomeSize 3000000)
+lenUnassembled num         41
+lenUnassembled ave       7681
+lenContig ng10     2569458 bp   lg10       1   sum    2569458 bp
+lenContig ng20     2569458 bp   lg20       1   sum    2569458 bp
+lenContig ng30     2569458 bp   lg30       1   sum    2569458 bp
+lenContig ng40     2569458 bp   lg40       1   sum    2569458 bp
+lenContig ng50     2569458 bp   lg50       1   sum    2569458 bp
+lenContig ng60     2569458 bp   lg60       1   sum    2569458 bp
+lenContig ng70     2569458 bp   lg70       1   sum    2569458 bp
+lenContig ng80     2569458 bp   lg80       1   sum    2569458 bp
+lenContig sum    2627032 (genomeSize 3000000)
+lenContig num          2
+lenContig ave    1313516

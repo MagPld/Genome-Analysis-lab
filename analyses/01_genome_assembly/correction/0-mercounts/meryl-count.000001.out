@@ -1,0 +1,99 @@
+
+Found perl:
+   /usr/bin/perl
+   This is perl 5, version 16, subversion 3 (v5.16.3) built for x86_64-linux-thread-multi
+
+Found java:
+   /sw/comp/java/x86_64/sun_jdk1.8.0_151/bin/java
+   java version "1.8.0_151"
+
+Found canu:
+   /sw/bioinfo/canu/2.2/rackham/bin/canu
+   canu snapshot v2.2 +0 changes (r10279 af9c6e709ff2d6473cf966702c420b9eb42d9078)
+
+Running job 1 based on command line options.
+
+Found 1 command tree.
+
+Counting 572 (estimated) million canonical 16-mers from 1 input file:
+    canu-seqStore: ../../genome_assembly.seqStore
+
+
+SIMPLE MODE
+-----------
+
+  16-mers
+    -> 4294967296 entries for counts up to 65535.
+    -> 64 Gbits memory used
+
+  600018507 input bases
+    -> expected max count of 2400074, needing 7 extra bits.
+    -> 28 Gbits memory used
+
+  11 GB memory needed
+
+
+COMPLEX MODE
+------------
+
+prefix     # of   struct   kmers/    segs/      min     data    total
+  bits   prefix   memory   prefix   prefix   memory   memory   memory
+------  -------  -------  -------  -------  -------  -------  -------
+     1     2  P  2223 kB   143 MM   138 kS  8192  B  1108 MB  1110 MB
+     2     4  P  2159 kB    71 MM    67 kS    16 kB  1073 MB  1075 MB
+     3     8  P  2101 kB    35 MM    32 kS    32 kB  1038 MB  1040 MB
+     4    16  P  2053 kB    17 MM    15 kS    64 kB  1001 MB  1003 MB
+     5    32  P  2033 kB  9155 kM  7730  S   128 kB   966 MB   968 MB
+     6    64  P  2062 kB  4577 kM  3721  S   256 kB   930 MB   932 MB
+     7   128  P  2194 kB  2288 kM  1790  S   512 kB   895 MB   897 MB
+     8   256  P  2526 kB  1144 kM   859  S  1024 kB   859 MB   861 MB
+     9   512  P  3264 kB   572 kM   412  S  2048 kB   824 MB   827 MB
+    10  1024  P  4808 kB   286 kM   197  S  4096 kB   788 MB   792 MB  Best Value!
+    11  2048  P  7968 kB   143 kM    94  S  8192 kB   752 MB   759 MB
+    12  4096  P    14 MB    71 kM    45  S    16 MB   720 MB   734 MB
+    13  8192  P    26 MB    35 kM    22  S    32 MB   704 MB   730 MB
+    14    16 kP    51 MB    17 kM    11  S    64 MB   704 MB   755 MB
+    15    32 kP   102 MB  9156  M     5  S   128 MB   640 MB   742 MB
+    16    64 kP   203 MB  4578  M     3  S   256 MB   768 MB   971 MB
+    17   128 kP   406 MB  2289  M     2  S   512 MB  1024 MB  1430 MB
+    18   256 kP   810 MB  1145  M     1  S  1024 MB  1024 MB  1834 MB
+    19   512 kP  1620 MB   573  M     1  S  2048 MB  2048 MB  3668 MB
+    20  1024 kP  3240 MB   287  M     1  S  4096 MB  4096 MB  7336 MB
+    21  2048 kP  6480 MB   144  M     1  S  8192 MB  8192 MB    14 GB
+    22  4096 kP    12 GB    72  M     1  S    16 GB    16 GB    28 GB
+
+
+FINAL CONFIGURATION
+-------------------
+
+Estimated to require 1582 MB memory out of 3072 MB allowed.
+Estimated to require 2 batches.
+
+Configured complex mode for 1.545 GB memory per batch, and up to 2 batches.
+
+Start counting with THREADED method.
+Used 0.279 GB / 2.969 GB to store      2094623 kmers; need 0.003 GB to sort        48180 kmers
+Used 0.382 GB / 2.969 GB to store     41888828 kmers; need 0.029 GB to sort       492425 kmers
+Used 0.486 GB / 2.969 GB to store     81683545 kmers; need 0.056 GB to sort       946486 kmers
+Used 0.589 GB / 2.969 GB to store    121478790 kmers; need 0.084 GB to sort      1410245 kmers
+Used 0.693 GB / 2.969 GB to store    161275539 kmers; need 0.110 GB to sort      1843352 kmers
+Used 0.797 GB / 2.969 GB to store    201073184 kmers; need 0.137 GB to sort      2294190 kmers
+Used 0.901 GB / 2.969 GB to store    240869598 kmers; need 0.164 GB to sort      2756591 kmers
+Used 1.005 GB / 2.969 GB to store    280669803 kmers; need 0.189 GB to sort      3165962 kmers
+Used 1.109 GB / 2.969 GB to store    320473608 kmers; need 0.214 GB to sort      3594203 kmers
+Used 1.213 GB / 2.969 GB to store    360275525 kmers; need 0.239 GB to sort      4006027 kmers
+Used 1.316 GB / 2.969 GB to store    400077607 kmers; need 0.263 GB to sort      4411368 kmers
+Used 1.420 GB / 2.969 GB to store    439879572 kmers; need 0.288 GB to sort      4832682 kmers
+Used 1.524 GB / 2.969 GB to store    479682448 kmers; need 0.313 GB to sort      5251783 kmers
+Used 1.628 GB / 2.969 GB to store    519485537 kmers; need 0.338 GB to sort      5667653 kmers
+Used 1.732 GB / 2.969 GB to store    559290190 kmers; need 0.362 GB to sort      6073273 kmers
+Used 1.836 GB / 2.969 GB to store    599092299 kmers; need 0.387 GB to sort      6486192 kmers
+
+Input complete.  Writing results to './genome_assembly.01.meryl.WORKING', using 4 threads.
+finishIteration()--
+
+Finished counting.
+
+Cleaning up.
+
+Bye.

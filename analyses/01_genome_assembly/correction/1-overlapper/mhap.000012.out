@@ -1,0 +1,69 @@
+
+Found perl:
+   /usr/bin/perl
+   This is perl 5, version 16, subversion 3 (v5.16.3) built for x86_64-linux-thread-multi
+
+Found java:
+   /sw/comp/java/x86_64/sun_jdk1.8.0_151/bin/java
+   java version "1.8.0_151"
+
+Found canu:
+   /sw/bioinfo/canu/2.2/rackham/bin/canu
+   canu snapshot v2.2 +0 changes (r10279 af9c6e709ff2d6473cf966702c420b9eb42d9078)
+
+Running job 12 based on command line options.
+Fetch blocks/000011.dat
+Fetch blocks/000012.dat
+
+Running block 000002 in query 000012
+
+Running with these settings:
+--filter-threshold = 1.0E-7
+--help = false
+--max-shift = 0.2
+--min-olap-length = 500
+--min-store-length = 0
+--no-rc = false
+--no-self = true
+--no-tf = false
+--num-hashes = 256
+--num-min-matches = 3
+--num-threads = 2
+--ordered-kmer-size = 14
+--ordered-sketch-size = 1000
+--repeat-idf-scale = 10.0
+--repeat-weight = 0.9
+--settings = 0
+--store-full-id = true
+--supress-noise = 0
+--threshold = 0.8
+--version = false
+-f = 
+-h = false
+-k = 16
+-p = 
+-q = queries/000012
+-s = ./blocks/000002.dat
+
+Processing files for storage in reverse index...
+Current # sequences loaded and processed from file: 5000...
+Current # sequences stored: 5000...
+Stored 6538 sequences in the index.
+Processed 6538 unique sequences (fwd and rev).
+Time (s) to read and hash from file: 1.721049754
+Opened fasta file /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/correction/1-overlapper/blocks/000011.dat.
+Processed 3201 to sequences.
+Time (s) to score, hash to-file, and output: 2.700766443
+Opened fasta file /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/correction/1-overlapper/blocks/000012.dat.
+Processed 3193 to sequences.
+Time (s) to score, hash to-file, and output: 1.104468134
+Total scoring time (s): 3.8181498900000004
+Total time (s): 5.5393190070000005
+MinHash search time (s): 0.444279827
+Total matches found: 29613
+Average number of matches per lookup: 4.631373162339694
+Average number of table elements processed per lookup: 57.48905223647169
+Average number of table elements processed per match: 12.412960524094148
+Average % of hashed sequences hit per lookup: 0.4803179946632823
+Average % of hashed sequences hit that are matches: 14.748097533766286
+Average % of hashed sequences fully compared that are matches: 89.9599003584665

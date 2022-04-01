@@ -1,0 +1,137 @@
+/sw/bioinfo/quast/4.5.4/rackham/bin/quast.py ../analyses/01_genome_assembly/genome_assembly.contigs.fasta -R ../data/reference/OBMB01.fasta -o ../analyses/01_genome_assembly/evaluation -t 1
+
+Version: 4.5.4
+
+System information:
+  OS: Linux-3.10.0-1160.59.1.el7.x86_64-x86_64-with-centos-7.9.2009-Core (linux_64)
+  Python version: 2.7.6
+  CPUs number: 16
+
+Started: 2022-03-31 16:50:46
+
+Logging to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/quast.log
+NOTICE: Output directory already exists. Existing Nucmer alignments can be used
+
+CWD: /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/code
+Main parameters: 
+  Threads: 1, minimum contig length: 500, ambiguity: one, threshold for extensive misassembly size: 1000
+
+Reference:
+  ../data/reference/OBMB01.fasta ==> OBMB01
+
+Contigs:
+  Pre-processing...
+  ../analyses/01_genome_assembly/genome_assembly.contigs.fasta ==> genome_assembly.contigs
+
+2022-03-31 16:50:54
+Running Basic statistics processor...
+  Reference genome:
+    OBMB01.fasta, length = 2610531, num fragments = 2, GC % = 54.14
+  Contig files: 
+    genome_assembly.contigs
+  Calculating N50 and L50...
+    genome_assembly.contigs, N50 = 2568209, L50 = 1, Total length = 2623952, GC % = 54.12, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/basic_stats/GC_content_plot.pdf
+  Drawing genome_assembly.contigs GC content plot...
+    saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/basic_stats/genome_assembly.contigs_GC_content_plot.pdf
+Done.
+
+2022-03-31 16:50:58
+Running Contig analyzer...
+  genome_assembly.contigs
+  Logging to files /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/contigs_report_genome_assembly-contigs.stdout and contigs_report_genome_assembly-contigs.stderr...
+  Aligning contigs to the reference
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/MUMmer/nucmer \
+  -c 65 -l 65 --maxmatch -p /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/nucmer_output/genome_assembly-contigs \
+  --emem -t 1 /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/quast_corrected_input/OBMB01.fasta \
+  /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/quast_corrected_input/genome_assembly-contigs.fasta \
+  >> /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/contigs_report_genome_assembly-contigs.stdout \
+  2>> /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/contigs_report_genome_assembly-contigs.stderr
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/MUMmer/delta-filter \
+  -i 95.0 -l 0 /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/nucmer_output/genome_assembly-contigs.delta \
+  > /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/nucmer_output/genome_assembly-contigs.fdelta \
+  2> /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/contigs_report_genome_assembly-contigs.stderr
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/MUMmer/mummerplot \
+  --html --layout -p /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/nucmer_output/genome_assembly-contigs \
+  /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/nucmer_output/genome_assembly-contigs.delta \
+  > /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/contigs_report_genome_assembly-contigs.stdout \
+  2> /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/contigs_report_genome_assembly-contigs.stderr
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/gnuplot/src/gnuplot \
+  /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/nucmer_output/genome_assembly-contigs.gp \
+  > /dev/null 2> /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/contigs_report_genome_assembly-contigs.stderr
+  MUMmer plot saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/genome_assembly-contigs_mummerplot.html
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/MUMmer/show-coords \
+  /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/nucmer_output/genome_assembly-contigs.delta \
+  > /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/nucmer_output/genome_assembly-contigs.coords_tmp \
+  2> /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/contigs_report_genome_assembly-contigs.stderr
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/MUMmer/show-snps \
+  -S -T -H /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/nucmer_output/genome_assembly-contigs.delta \
+  < /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/nucmer_output/genome_assembly-contigs.coords.headless \
+  > /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/nucmer_output/genome_assembly-contigs.all_snps \
+  2> /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/contigs_report_genome_assembly-contigs.stderr
+  Analysis is finished.
+
+  Gzipping /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/nucmer_output/genome_assembly-contigs.all_snps to reduce disk space usage...
+    saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/nucmer_output/genome_assembly-contigs.all_snps.gz
+  Creating total report...
+    saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2022-03-31 16:51:05
+Running NA-NGA calculation...
+  genome_assembly.contigs, Largest alignment = 2193723, NA50 = 2193723, NGA50 = 2193723, LA50 = 1, LGA50 = 1
+  Drawing cumulative plot...
+    saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/aligned_stats/NGAx_plot.pdf
+Done.
+
+2022-03-31 16:51:06
+Running Genome analyzer...
+  NOTICE: No file with genes provided. Use the -G option if you want to specify it.
+  NOTICE: No file with operons provided. Use the -O option if you want to specify it.
+  genome_assembly.contigs
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding option to enable it.
+
+2022-03-31 16:51:08
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2022-03-31 16:51:11
+RESULTS:
+  Text versions of total report are saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/report.html
+  PDF version (tables and plots) is saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/report.pdf
+  Icarus (contig browser) is saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/icarus.html
+  Log saved to /domus/h1/magdap/genome_analyses/Genome-Analysis-lab/analyses/01_genome_assembly/evaluation/quast.log
+
+Finished: 2022-03-31 16:51:11
+Elapsed time: 0:00:24.973225
+NOTICEs: 4; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

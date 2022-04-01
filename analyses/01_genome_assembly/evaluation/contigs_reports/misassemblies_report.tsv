@@ -1,0 +1,14 @@
+Assembly	genome_assembly.contigs
+# misassemblies	1
+    # relocations	1
+    # translocations	0
+    # inversions	0
+# misassembled contigs	1
+Misassembled contigs length	2568209
+# local misassemblies	0
+# unaligned mis. contigs	0
+# mismatches	0
+# indels	181
+    # indels (<= 5 bp)	181
+    # indels (> 5 bp)	0
+Indels length	181
