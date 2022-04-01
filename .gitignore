@@ -1,0 +1,32 @@
+# ignore all slurm outputs from batch runs
+slurm-*
+
+# ignore any files containing fasta
+*fasta*
+*.fa
+!genome_assembly.contigs.fasta
+
+
+
+# ignore everything in seqStore
+genome_assembly.seqStore/
+*seqStore*
+
+
+# ignore logs
+.log
+canu-logs/
+canu-scripts/
+01_genome_assembly/correction/
+01_genome_assembly/trimming/
+01_genome_assembly/unitigging/
+genome_assembly.contigs.layout.tigInfo
+genome_assembly.contigs.layout.readToTig
+
+
+
+01_genome_assembly/*
+!genome_assembly.contigs.fasta
+!evaluation/*
+!genome_assembly.report
+
