@@ -5,7 +5,7 @@
 #SBATCH -p core
 #SBATCH -n 1
 #SBATCH -t 00:30:00
-#SBATCH -J MUMmer_1
+#SBATCH -J MUMmer_03
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user polder.magdalena@gmail.com
 
@@ -17,4 +17,7 @@ module load MUMmer
 # Your commands
 
 mummer -mum -b -c ../analyses/01_genome_assembly/genome_assembly.contigs.fasta ../data/reference/OBMB01.fasta > mummer.mums
-mummerplot -R ../data/reference/OBMB01.fasta -Q ../analyses/01_genome_assembly/genome_assembly.contigs.fasta --png -p mummer mummer.mums
+
+mummerplot -png -p mummer mummer.mums
+
+# mummerplot -R ../data/reference/OBMB01.fasta -Q ../analyses/01_genome_assembly/genome_assembly.contigs.fasta --png -p mummer mummer.mums
