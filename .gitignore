@@ -15,7 +15,7 @@ genome_assembly.seqStore/
 
 # ignore logs
 .log
-/analyses/*
+analyses/*
 !/analyses/01_genome_assembly/genome_assembly.report
 !/analyses/01_genome_assembly/evaluation/mummer.png
 !/analyses/01_genome_assembly/evaluation/report.pdf
