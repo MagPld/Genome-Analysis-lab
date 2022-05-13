@@ -1,0 +1,26 @@
+#!/bin/bash -l
+
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 10:00:00
+#SBATCH -J Htseq_03
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user polder.magdalena@gmail.com
+
+
+# Load modules
+module load bioinfo-tools
+module load htseq
+module load samtools
+
+
+cd ../analyses/04_mapping
+
+for f in *.bam
+do
+	echo $f
+	samtools index $f
+	htseq-count -f bam -r pos $f -t CDS -i ID ../02_annotation/annotation_clean.gff -c ../05_counting/${f:0:10}_countread.csv > ../05_counting/${f:0:10}_info.txt
+done

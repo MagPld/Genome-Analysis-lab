@@ -1,0 +1,28 @@
+#!/bin/bash -l
+
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 05:00:00
+#SBATCH -J bwa_03
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user polder.magdalena@gmail.com
+
+
+# Load modules
+module load bioinfo-tools
+module load bwa
+module load samtools
+
+cd ../analyses/
+
+bwa index 01_genome_assembly/genome_assembly.contigs.fasta
+wait
+for f in ../data/RNA_trimmed_reads/*P1.trim.fastq.gz
+do
+	echo $f
+	echo ${f/P1/P2}
+	bwa mem 01_genome_assembly/genome_assembly.contigs.fasta \
+	$f ${f/P1/P2} -t 2 | samtools sort -o 04_2_mapping/${f:26:10}_mapped.bam
+done
